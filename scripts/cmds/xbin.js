@@ -12,7 +12,7 @@ module.exports = {
     name: "xbin",
     aliases: ["xbin"],
     version: "3.2",
-    author: "Eren",
+    author: "Eren (Modified by tom)",
     countDown: 5,
     role: 0,
     shortDescription: {
@@ -58,7 +58,7 @@ module.exports = {
     const body = (event.body || "").trim().toLowerCase();
     
     // Check for both prefixed and non-prefixed commands
-    if (body === "bin" || body.startsWith("bin ")) {
+    if (body === "xbin" || body.startsWith("xbin ")) {
       // Extract arguments
       const commandArgs = body.split(/\s+/).slice(1);
       await this.onStart({ 
